@@ -17,14 +17,19 @@ export default async function TopMenu() {
         {session ? "Sign-Out" : "Sign-In"}
       </Link>
 
+      {/* My Booking link */}
+      <Link
+        href="/mybooking"
+        className="flex h-full items-center px-4 text-lg font-medium text-amber-800 underline"
+      >
+        My Booking
+      </Link>
+
       {/* empty space */}
       <div className="flex-1" />
 
       {/* Booking menu item */}
       <TopMenuItem title="Booking" pageRef="/booking" />
-
-      {/* My Booking menu item */}
-      <TopMenuItem title="My Booking" pageRef="/mybooking" />
 
       {/* logo box */}
       <div className="flex h-full w-28 items-center justify-center border-l border-gray-200 bg-white">
